@@ -1,0 +1,20 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="23,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T15U3">mixture</span> = MixtureComponent(<span class="mxinfo " id="T4:U2"><span class="var type2" id="S3T4V2U6">num</span></span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="23,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,3" id="srcline3"> 3</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,4" id="srcline4"> 4</a></span><span class="line"><span class="mxinfo " id="T15:U4"><span class="var type1" id="S4T15U9">mixture_component</span> = <span class="mxinfo " id="T15:U6">struct(<span class="keyword">...</span></span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,5" id="srcline5"> 5</a></span><span class="line"><span class="mxinfo " id="T15:U4"><span class="mxinfo " id="T15:U6">    <span class="string">'Mu'</span>, zeros(5,1), <span class="keyword">...</span></span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,6" id="srcline6"> 6</a></span><span class="line"><span class="mxinfo " id="T15:U4"><span class="mxinfo " id="T15:U6">    <span class="string">'Cov'</span>, zeros(5,5), <span class="keyword">...</span></span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,7" id="srcline7"> 7</a></span><span class="line"><span class="mxinfo " id="T15:U4"><span class="mxinfo " id="T15:U6">    <span class="string">'w'</span>, 0, <span class="keyword">...</span></span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,8" id="srcline8"> 8</a></span><span class="line"><span class="mxinfo " id="T15:U4"><span class="mxinfo " id="T15:U6">    <span class="string">'Prec'</span>, zeros(5,5))</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="23,9" id="srcline9"> 9</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,10" id="srcline10">10</a></span><span class="line"><span class="mxinfo " id="T15:U7"><span class="var type1" id="S2T15U31">mixture</span> = <span class="mxinfo " id="T15:U9">repmat(<span class="var type1" id="S4T15U34">mixture_component</span>, <span class="var type1" id="S3T4U35">num</span>, 1)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="23,11" id="srcline11">11</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,12" id="srcline12">12</a></span><span class="line"><span class="comment">%coder.cstructname(mixture, 'MixtureComponent')</span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,13" id="srcline13">13</a></span><span class="line"><span class="comment">%coder.varsize('mixture(:).Mu','mixture(:).Cov','mixture(:).Prec');</span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,14" id="srcline14">14</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,15" id="srcline15">15</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="23,16" id="srcline16">16</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,17" id="srcline17">17</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="23,18" id="srcline18">18</a></span><span class="line"></span></span>
+</pre>

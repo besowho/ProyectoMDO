@@ -1,0 +1,30 @@
+/*
+ * File: bwmorph.h
+ *
+ * MATLAB Coder version            : 2.7
+ * C/C++ source code generated on  : 04-Mar-2021 10:19:22
+ */
+
+#ifndef __BWMORPH_H__
+#define __BWMORPH_H__
+
+/* Include Files */
+#include <math.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include "rt_nonfinite.h"
+#include "rtwtypes.h"
+#include "ssmDetect_types.h"
+
+/* Function Declarations */
+extern void b_bwmorph(boolean_T bwin_data[], int bwin_size[2]);
+extern void bwmorph(boolean_T bwin_data[], int bwin_size[2]);
+
+#endif
+
+/*
+ * File trailer for bwmorph.h
+ *
+ * [EOF]
+ */
